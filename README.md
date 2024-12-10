@@ -15,3 +15,5 @@ In NDE, the window manager buttons consists of 3 shapes, including:
 - Square (This button is used to make app windows to fullscreen mode in NDE.)
 
 *Note: The "sample.c" file has been created to test what a sample window manager for NDE could be, you can also use it to get inspiration for the official NDE window manager code.* 
+
+Because we have insufficent resources to develop our own Window Manager system for NDE, we have decided to use GNOME's Mutter Window Manager system for the time being. 
