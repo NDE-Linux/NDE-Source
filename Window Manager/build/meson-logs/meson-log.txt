@@ -1,0 +1,474 @@
+Build started at 2024-12-10T11:23:19.036459
+Main binary: /opt/local/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+Build Options: 
+Python system: Darwin
+The Meson build system
+Version: 1.5.2
+Source dir: /Users/dylando/mutter
+Build dir: /Users/dylando/mutter/build
+Build type: native build
+Project name: mutter
+Project version: 47.0
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+-----------
+Running command: -cpp -x c -E -dM -
+pre-processor extraction using -cpp -x c failed, falling back w/o lang
+Running command: -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 1
+stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+-----------
+-----------
+Detecting Apple linker via: `cc -Wl,-v` -> 1
+stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/dylando/mutter/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the host machine: cc ld64 820.1
+-----------
+Detecting archiver via: `llvm-ar-14 --version` -> [Errno 2] No such file or directory: 'llvm-ar-14'
+-----------
+Detecting archiver via: `llvm-ar --version` -> [Errno 2] No such file or directory: 'llvm-ar'
+-----------
+Detecting archiver via: `ar --version` -> 1
+stderr:
+usage:  ar -d [-TLsv] archive file ...
+	ar -m [-TLsv] archive file ...
+	ar -m [-abiTLsv] position archive file ...
+	ar -p [-TLsv] archive [file ...]
+	ar -q [-cTLsv] archive file ...
+	ar -r [-cuTLsv] archive file ...
+	ar -r [-abciuTLsv] position archive file ...
+	ar -t [-TLsv] archive [file ...]
+	ar -x [-ouTLsv] archive [file ...]
+-----------
+-----------
+Detecting compiler via: `cc --version` -> 0
+stdout:
+Apple clang version 14.0.0 (clang-1400.0.29.202)
+Target: x86_64-apple-darwin21.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+-----------
+Running command: -cpp -x c -E -dM -
+pre-processor extraction using -cpp -x c failed, falling back w/o lang
+Running command: -E -dM -
+-----
+-----------
+Detecting linker via: `cc -Wl,--version` -> 1
+stderr:
+ld: unknown option: --version
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+-----------
+-----------
+Detecting Apple linker via: `cc -Wl,-v` -> 1
+stderr:
+@(#)PROGRAM:ld  PROJECT:ld64-820.1
+BUILD 20:07:01 Nov  7 2022
+configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+Library search paths:
+	/usr/local/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+-----------
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command:  /Users/dylando/mutter/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (clang 14.0.0 "Apple clang version 14.0.0 (clang-1400.0.29.202)")
+C linker for the build machine: cc ld64 820.1
+-----------
+Detecting archiver via: `llvm-ar-14 --version` -> [Errno 2] No such file or directory: 'llvm-ar-14'
+-----------
+Detecting archiver via: `llvm-ar --version` -> [Errno 2] No such file or directory: 'llvm-ar'
+-----------
+Detecting archiver via: `ar --version` -> 1
+stderr:
+usage:  ar -d [-TLsv] archive file ...
+	ar -m [-TLsv] archive file ...
+	ar -m [-abiTLsv] position archive file ...
+	ar -p [-TLsv] archive [file ...]
+	ar -q [-cTLsv] archive file ...
+	ar -r [-cuTLsv] archive file ...
+	ar -r [-abciuTLsv] position archive file ...
+	ar -t [-TLsv] archive [file ...]
+	ar -x [-ouTLsv] archive [file ...]
+-----------
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running compile:
+Working directory:  /Users/dylando/mutter/build/meson-private/tmp10ojvrj9
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc /Users/dylando/mutter/build/meson-private/tmp10ojvrj9/testfile.c -o /Users/dylando/mutter/build/meson-private/tmp10ojvrj9/output.exe -O0 -Werror=implicit-function-declaration -Wl,-fatal_warnings -Wl,--disable-new-dtags` -> 1
+stderr:
+ld: unknown option: --disable-new-dtags
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+-----------
+Compiler for C supports link arguments -Wl,--disable-new-dtags: NO 
+Running compile:
+Working directory:  /Users/dylando/mutter/build/meson-private/tmph7lnrzxh
+Code:
+int main(void) { return 0; }
+
+-----------
+Command line: `cc /Users/dylando/mutter/build/meson-private/tmph7lnrzxh/testfile.c -o /Users/dylando/mutter/build/meson-private/tmph7lnrzxh/output.exe -O0 -Werror=implicit-function-declaration -lm -Wl,-undefined,dynamic_lookup` -> 0
+Library m found: YES
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: YES (/opt/local/bin/pkg-config) 0.29.2
+Determining dependency 'graphene-gobject-1.0' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion graphene-gobject-1.0` -> 0
+stdout:
+1.10.8
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags graphene-gobject-1.0` -> 0
+stdout:
+-mfpmath=sse -msse -msse2 -I/opt/local/include/graphene-1.0 -I/opt/local/lib/graphene-1.0/include -I/opt/local/include -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs graphene-gobject-1.0` -> 0
+stdout:
+-L/opt/local/lib -lgraphene-1.0 -lgobject-2.0 -lglib-2.0 -lintl
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs graphene-gobject-1.0` -> 0
+stdout:
+-L/opt/local/lib -lgraphene-1.0 -lgobject-2.0 -lglib-2.0 -lintl
+-----------
+Running compile:
+Working directory:  /Users/dylando/mutter/build/meson-private/tmpnvia4tck
+Code:
+
+        #include<stddef.h>
+        #include<stdio.h>
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+-----------
+Command line: `cc /Users/dylando/mutter/build/meson-private/tmpnvia4tck/testfile.c -o /Users/dylando/mutter/build/meson-private/tmpnvia4tck/output.exe -O0 -Werror=implicit-function-declaration` -> 0
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /Users/dylando/mutter/build/meson-private/tmp_z3b95za
+Code:
+
+-----------
+Command line: `cc /Users/dylando/mutter/build/meson-private/tmp_z3b95za/testfile.c -o /Users/dylando/mutter/build/meson-private/tmp_z3b95za/output.obj -c -O0 -Werror=implicit-function-declaration -Werror=unknown-warning-option -Werror=unused-command-line-argument -Werror=ignored-optimization-argument --print-search-dirs` -> 0
+stdout:
+programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0
+-----------
+Run-time dependency graphene-gobject-1.0 found: YES 1.10.8
+Determining dependency 'gdk-pixbuf-2.0' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion gdk-pixbuf-2.0` -> 0
+stdout:
+2.42.12
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags gdk-pixbuf-2.0` -> 0
+stdout:
+-I/opt/local/include/gdk-pixbuf-2.0 -I/opt/local/include/libpng16 -I/opt/local/include -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs gdk-pixbuf-2.0` -> 0
+stdout:
+-L/opt/local/lib -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -lintl
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs gdk-pixbuf-2.0` -> 0
+stdout:
+-L/opt/local/lib -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -lintl
+-----------
+Run-time dependency gdk-pixbuf-2.0 found: YES 2.42.12
+Determining dependency 'pango' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion pango` -> 0
+stdout:
+1.52.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags pango` -> 0
+stdout:
+-I/opt/local/include/pango-1.0 -I/opt/local/include -I/opt/local/include/fribidi -I/opt/local/include -I/opt/local/include/cairo -I/opt/local/include/pixman-1 -I/opt/local/include -I/opt/local/include/harfbuzz -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include -I/opt/local/include/freetype2 -I/opt/local/include/libpng16 -I/opt/local/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pango` -> 0
+stdout:
+-L/opt/local/lib -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pango` -> 0
+stdout:
+-L/opt/local/lib -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz
+-----------
+Run-time dependency pango found: YES 1.52.2
+Determining dependency 'cairo' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion cairo` -> 0
+stdout:
+1.17.6
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags cairo` -> 0
+stdout:
+-I/opt/local/include/cairo -I/opt/local/include -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include -I/opt/local/include/pixman-1 -I/opt/local/include -I/opt/local/include/freetype2 -I/opt/local/include -I/opt/local/include/libpng16 -I/opt/local/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs cairo` -> 0
+stdout:
+-L/opt/local/lib -lcairo
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs cairo` -> 0
+stdout:
+-L/opt/local/lib -lcairo
+-----------
+Run-time dependency cairo found: YES 1.17.6
+Determining dependency 'pangocairo' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion pangocairo` -> 0
+stdout:
+1.52.2
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags pangocairo` -> 0
+stdout:
+-I/opt/local/include/pango-1.0 -I/opt/local/include/harfbuzz -I/opt/local/include/pango-1.0 -I/opt/local/include -I/opt/local/include/fribidi -I/opt/local/include -I/opt/local/include/harfbuzz -I/opt/local/include -I/opt/local/include/cairo -I/opt/local/include -I/opt/local/include/glib-2.0 -I/opt/local/lib/glib-2.0/include -I/opt/local/include -I/opt/local/include/pixman-1 -I/opt/local/include -I/opt/local/include/freetype2 -I/opt/local/include -I/opt/local/include/libpng16 -I/opt/local/include
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pangocairo` -> 0
+stdout:
+-L/opt/local/lib -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz -lcairo
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pangocairo` -> 0
+stdout:
+-L/opt/local/lib -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lintl -lharfbuzz -lcairo
+-----------
+Run-time dependency pangocairo found: YES 1.52.2
+Determining dependency 'pixman-1' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion pixman-1` -> 0
+stdout:
+0.43.4
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags pixman-1` -> 0
+stdout:
+-I/opt/local/include/pixman-1
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pixman-1` -> 0
+stdout:
+-L/opt/local/lib -lpixman-1
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs pixman-1` -> 0
+stdout:
+-L/opt/local/lib -lpixman-1
+-----------
+Run-time dependency pixman-1 found: YES 0.43.4
+Determining dependency 'fribidi' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion fribidi` -> 0
+stdout:
+1.0.15
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags fribidi` -> 0
+stdout:
+-I/opt/local/include/fribidi
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs fribidi` -> 0
+stdout:
+-L/opt/local/lib -lfribidi
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs fribidi` -> 0
+stdout:
+-L/opt/local/lib -lfribidi
+-----------
+Run-time dependency fribidi found: YES 1.0.15
+Determining dependency 'gsettings-desktop-schemas' with pkg-config executable '/opt/local/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --modversion gsettings-desktop-schemas` -> 0
+stdout:
+3.38.0
+-----------
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --cflags gsettings-desktop-schemas` -> 0
+stdout:
+-I/opt/local/include/gsettings-desktop-schemas
+-----------
+env[PKG_CONFIG_ALLOW_SYSTEM_LIBS]: 1
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs gsettings-desktop-schemas` -> 0
+env[PKG_CONFIG_PATH]: 
+env[PKG_CONFIG]: /opt/local/bin/pkg-config
+-----------
+Called: `/opt/local/bin/pkg-config --libs gsettings-desktop-schemas` -> 0
+Dependency gsettings-desktop-schemas found: [1;31mNO[0m. Found 3.38.0 but need: '>= 47.beta'
+Dependency lookup for gsettings-desktop-schemas with method 'pkgconfig' failed: Invalid version, need 'gsettings-desktop-schemas' ['>= 47.beta'] found '3.38.0'.
+Finding framework path by running:  cc -v -E - 
+
+Looking for framework gsettings-desktop-schemas in /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+CMake binary for host machine is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: /opt/local/bin/cmake (3.29.5)
+Extracting basic cmake information
+CMake Toolchain: Calling CMake once to generate the compiler state
+Calling CMake (['/opt/local/bin/cmake']) in /Users/dylando/mutter/build/meson-private/__CMake_compiler_info__ with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-G"
+  - "Ninja"
+  - "-DCMAKE_TOOLCHAIN_FILE=/Users/dylando/mutter/build/meson-private/__CMake_compiler_info__/CMakeMesonTempToolchainFile.cmake"
+  - "."
+Try CMake generator: auto
+Calling CMake (['/opt/local/bin/cmake']) in /Users/dylando/mutter/build/meson-private/cmake_gsettings-desktop-schemas with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-DCMAKE_TOOLCHAIN_FILE=/Users/dylando/mutter/build/meson-private/cmake_gsettings-desktop-schemas/CMakeMesonToolchainFile.cmake"
+  - "."
+  -- Module search paths:    ['/', '/Applications', '/Library/Developer/CommandLineTools/Library/Frameworks', '/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks', '/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr', '/Library/Frameworks', '/System/Library/Frameworks', '/Users/dylando/Applications', '/opt', '/opt/local', '/usr', '/usr/local']
+  -- CMake root:             /opt/local/share/cmake-3.29
+  -- CMake architectures:    []
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', '']
+Preliminary CMake check failed. Aborting.
+Run-time dependency gsettings-desktop-schemas found: NO (tried framework and cmake)
+
+meson.build:117:32: ERROR: Dependency lookup for gsettings-desktop-schemas with method 'pkgconfig' failed: Invalid version, need 'gsettings-desktop-schemas' ['>= 47.beta'] found '3.38.0'.
