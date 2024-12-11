@@ -17,3 +17,9 @@ In NDE, the window manager buttons consists of 3 shapes, including:
 *Note: The "sample.c" file has been created to test what a sample window manager for NDE could be, you can also use it to get inspiration for the official NDE window manager code.* 
 
 Because we have insufficent resources to develop our own Window Manager system for NDE, we have decided to use GNOME's Mutter Window Manager system for the time being. 
+
+# JDK and JVM for NDE
+
+The main directory for JDK and JVM in the NDE Source repository has been deleted since there are errors with GitHub, not allowing you to upload a huge file that cant be split in half, and errors with GitHub Desktop, disconnecting the remote anytime you Push to origin.
+
+Instead th JDK and JVM for NDE will be hosted on our GitLab Group. We will update this README when it's ready.
